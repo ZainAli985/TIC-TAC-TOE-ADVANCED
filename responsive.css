@@ -1,0 +1,269 @@
+
+@media screen and (max-width: 1200px)  {
+
+    .score_board{
+        border-radius: 1.75rem; /*changed*/
+        padding: 1.2rem 1.2rem 1.2rem 1.2rem; /*changed*/
+    }
+    .miscellaneous{
+        
+        font-size: 1.5rem;/*Changed*/
+        margin-top: 4.5rem ; /*Changed*/
+    }
+    .rules{
+        font-size: 1.2rem; /*changed*/
+        font-weight: bold;
+        padding: 1rem 1rem 1rem 1rem; /*changed*/
+        border-radius: 1cm; /*changed*/
+  
+    }
+    .themes{
+        font-size: 1.2rem; /*changed*/
+        font-weight: bold;
+        padding: 1rem 1rem 1rem 1rem; /*changed*/
+        border-radius: 1cm; /*changed*/
+    }
+    #navbar img.logo{
+        height: 5.5rem;  /*changed*/
+    }
+    #navbar img.modebtn{
+        height: 5rem;  /*changed*/
+    }
+    .player_status {
+        margin-top: 6rem;
+    }
+    .reset_btn{
+        font-size: 1.5rem; /*changed*/
+        padding: 1.5rem 1.5rem 1.5rem 1.5rem; /*changed*/
+    }
+    .newgame_btn{
+        font-size: 1.5rem; /*changed*/
+        padding: 1.5rem 1.5rem 1.5rem 1.5rem; /*changed*/
+    }
+}
+
+@media only screen and (max-width: 662px) {
+    #navbar H1{
+        font-size: 5vw;
+    }
+
+    .score_board{
+        margin-top: 2rem;
+        border-radius: 1.2rem; /*changed*/
+        padding: 1rem 1rem 1rem 1rem; /*changed*/
+        font-size: 3vw; /*changed*/
+        margin-left: 1rem;
+    }
+    .miscellaneous{
+        flex-direction: row; /*Changed*/
+        font-size: 1.5rem; /*Changed*/
+        margin-top: 0rem ; /*Changed*/
+        margin-right: 0.5rem; /*changed*/
+    }
+    .rules{
+        font-size: 1rem; /*changed*/
+        padding: 1rem  1rem  1rem  1rem; /*changed*/
+        border-radius: 1rem; /*changed*/
+    }
+    .themes{
+        font-size: 1rem; /*changed*/
+        padding:  1rem  1rem  1rem  1rem; /*changed*/
+        border-radius: 1rem; /*changed*/
+    }
+    #navbar img.logo{
+        height: 4.2rem;  /*changed*/
+    }
+    #navbar img.modebtn{
+        height: 3.8rem;  /*changed*/
+    }
+    .player_status {
+        margin-top: 6rem;
+    }
+    .reset_btn{
+        font-size: 1.3rem; /*changed*/
+        padding: 1.3rem 1.3rem 1.3rem 1.3rem; /*changed*/
+    }
+    .newgame_btn{
+        font-size: 1.3rem; /*changed*/
+        padding: 1.3rem 1.3rem 1.3rem 1.3rem; /*changed*/
+    }
+    .player_status {
+        margin-top: 3.9rem;
+        padding: 1rem 1rem 1rem 1rem;
+        font-size: 1.3rem;
+        border-radius: 1.2rem;
+        margin-left: 1rem;
+    }
+
+}
+
+@media only screen and (max-width:433px){
+
+    #navbar{
+        height: 8rem; /*changed*/
+    }
+    #navbar H1{
+        font-size: 4vw; /*changed*/
+    }
+    #navbar img.logo{
+        height: 3.1rem;  /*changed*/
+    }
+    #navbar img.modebtn{
+        height: 2.6rem;  /*changed*/
+    }
+    .player_status {
+        margin-top: 3.9rem;
+        padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+        font-size: 1rem;
+        border-radius: 1rem;
+        margin-left: 1rem;
+    }    
+    .reset_btn{
+        font-size: 1rem; /*changed*/
+        padding: 1rem 1rem 1rem 1rem; /*changed*/
+        border-radius: 1rem;
+    }
+    .newgame_btn{
+        font-size: 1rem; /*changed*/
+        padding: 1rem 1rem 1rem 1rem; /*changed*/
+        border-radius: 1rem;
+    }
+    .rules{
+        font-size: 0.8rem; /*changed*/
+        padding: 0.8rem  0.8rem  0.8rem  0.8rem; /*changed*/
+        border-radius: 0.8rem; /*changed*/
+    }
+    .themes{
+        font-size: 0.8rem; /*changed*/
+        padding:  0.8rem  0.8rem  0.8rem  0.8rem; /*changed*/
+        border-radius: 0.8rem; /*changed*/
+    }
+    .game_board{
+        grid-template-columns: repeat(3,8rem); /*changed*/
+        grid-template-rows: repeat(3,8rem); /*changed*/
+        gap: 1rem; /*changed*/
+    }
+    .box{
+        border-radius: 1rem; /*changed*/
+    }
+    .score_board{
+        font-size: 1.2rem; /*changed*/
+        border-radius: 1rem; /*changed*/
+        padding: 1rem 1rem 1rem 1rem; /*changed*/
+    }
+}
+
+/* For Larger Screen  */
+
+@media screen and (min-width: 1400px) {
+
+
+    /* BACKGROUNDS  */
+
+
+    .background-1 {
+        position: relative; /* Necessary for the ::before to position correctly */
+        min-height: 100vh; /* Minimum height to ensure it takes the full viewport height */
+    }
+    
+    .background-1::before {
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 150rem; 
+        position: absolute;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("5359268.jpg");
+        background-size: cover; /* Cover the entire area */
+        z-index: -1;
+        pointer-events: none;
+    }
+    .background-2 {
+        position: relative; /* Necessary for the ::before to position correctly */
+        min-height: 100vh; /* Minimum height to ensure it takes the full viewport height */
+    }
+    
+    .background-2::before {
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 150rem; 
+        position: absolute;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("vecteezy_beautiful-blue-mountain-landscape-with-sunrise-and-sunset-in_7162596-1.jpg");
+        background-size: cover; /* Cover the entire area */
+        z-index: -1;
+        pointer-events: none;
+    }
+
+    
+
+
+
+
+    
+    .game_board{
+        grid-template-columns: repeat(3,18rem); /*changed*/
+        grid-template-rows: repeat(3,18rem); /*changed*/
+        gap: 2rem; /*changed*/
+    }
+    .reset_btn{
+        font-size: 3rem; /*changed*/
+        padding: 2rem 2rem 2rem 2rem; /*changed*/
+        border-radius: 1rem;
+    }
+    .newgame_btn{
+        font-size: 3rem; /*changed*/
+        padding: 2rem 2rem 2rem 2rem; /*changed*/
+        border-radius: 1rem;
+    }
+    .player_status {
+        display: inline-flex;
+        margin-top: 7rem;
+        /* border: 2px solid seagreen; */
+        position: absolute;  /*provides independency from neighbour floating divs*/
+        left: 50%;  /* Start at the center of the page */
+        padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+        font-size: 5rem;
+        overflow: hidden;
+        transform: translateX(-50%); /*Doesn't move it back keeps in its place */
+        background-color: rgba(128, 128, 128, 0.1);
+        border-radius: 1.2rem;
+    }
+    .rules{
+        font-size: 1.8vw;
+        font-family: "DynaPuff", system-ui;
+        /* font-weight: bold; */
+        padding: 1rem 2rem 1rem 2rem;
+        border-radius: 3rem;
+        border: none;
+    }
+    .themes{
+        font-size: 1.8vw;
+        font-family: "DynaPuff", system-ui;
+        /* font-weight: bold; */
+        padding: 1rem 2rem 1rem 2rem;
+        border-radius: 3rem;
+        border: none;
+    }
+    #navbar img.logo{
+        height: 9rem;
+        /* border: 2px solid yellow; */
+        justify-content: left;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        cursor: pointer;
+    }
+    #navbar img.modebtn{
+        /* border: 2px solid green; */
+        height: 9rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        cursor: pointer;
+    }
+
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="default-background">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>TIC-TAC-TOE</title>
+   <!-- Favicon -->
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- CSS  -->
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="utility.css">
+     <link rel="stylesheet" href="responsive.css">
+    
+</head>
+<body>
+<!-- Welcome TO TIC-TAC-TOE GAME  -->
+
+<nav id="navbar">
+       <img src="favicon.png" alt="logo" class="logo">
+    <H1>WELCOME TO TIC TAC TOE</H1>
+    <img src="modeimg.png" alt="modeBtn" class="modebtn">
+</nav>
+   <!-- SCOREBOARD   // Player X-O -->
+    <div class="score_board">
+      <p>PLAYER - X: <span id="PlayerXscore">0</span> </p>
+      <p>PLAYER - O: <span id="PlayerOscore">0</span> </p> 
+    </div> 
+    <!-- Miscellaneous Material -->
+    <div class="miscellaneous">
+      <button class="rules">Rules</button>
+      <button class="themes">Themes</button>
+    </div> 
+     <!-- Player Status Eg:/ Turn Win Draw  -->
+     <div class="player_status">
+      <p><span id="current_info">Turn To Player O</span></p> 
+    </div>
+   
+    <!-- Main Board Game  --> 
+     <div class="game_board">
+      <Button class="box"></Button>
+      <Button class="box"></Button>
+      <Button class="box"></Button>
+      <Button class="box"></Button>
+      <Button class="box"></Button>
+      <Button class="box"></Button>
+      <Button class="box"></Button>
+      <Button class="box"></Button>
+      <Button class="box"></Button>
+     </div>
+
+     <!-- Reset Button/New Game  -->
+      <div class="btn_container">
+         <button class="newgame_btn">NEW GAME</button>
+         <button class="reset_btn">RESET GAME</button>
+      </div>
+<!-- JAVASCRIPT  -->
+   <script src="script.js"></script>
+</body>
+</html>
+
+

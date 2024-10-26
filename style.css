@@ -1,0 +1,201 @@
+
+/* NAVBAR  */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid red; */
+    height: 12rem;
+    justify-content: space-between;
+
+}
+
+/* Animation Fade-In  ENABLE AT END  */
+
+@keyframes bounceFade {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-20px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#navbar H1{
+    /* Animation  */
+    /* border: 2px solid blue; */
+    animation: bounceFade 1.2s ease-in-out forwards;
+    /* Rest Properties  */
+    /* font-family: "Playwrite GB S", cursive; */
+    /* font-family: "DynaPuff", system-ui; */
+    font-size: 5vw;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    justify-content: center; 
+}
+#navbar img.logo{
+    height: 7rem;
+    /* border: 2px solid yellow; */
+    justify-content: left;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+#navbar img.modebtn{
+    /* border: 2px solid green; */
+    height: 6rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.score_board{
+    background-color: rgba(255, 215, 0, 0.35);
+    display: inline-flex;
+    margin-top: 5rem ;
+    /* border: 2px solid aqua; */
+    font-size: 2vw;
+    flex-direction: column;
+    margin-left: 3rem;
+    border-radius: 2.5rem;
+    padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+}
+.score_board:hover{
+    background-color: rgba(255, 215, 0, 0.40);
+}
+
+/* Miscellaneous Material  */
+.miscellaneous{
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 5rem ;
+    margin-right: 3rem;
+    /* border: 2px solid pink; */
+    float: right;
+    gap: 0.7rem;
+    
+}
+.rules{
+    font-size: 1.5vw;
+    font-family: "DynaPuff", system-ui;
+    /* font-weight: bold; */
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 3rem;
+    border: none;
+}
+.themes{
+    font-size: 1.5vw;
+    font-family: "DynaPuff", system-ui;
+    /* font-weight: bold; */
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 3rem;
+    border: none;
+}
+.rules:hover {
+    background-color: rgba(255, 215, 0, 0.35);
+    cursor: pointer;
+    
+}
+.themes:hover {
+    background-color: rgba(255, 215, 0, 0.35);
+    cursor: pointer;
+    
+}
+/* CURRENT STATS  */
+.player_status {
+    display: inline-flex;
+    margin-top: 7rem;
+    /* border: 2px solid seagreen; */
+    position: absolute;  /*provides independency from neighbour floating divs*/
+    left: 50%;  /* Start at the center of the page */
+    padding: 1rem 1rem 1rem 1rem;
+    font-size: 2vw;
+    overflow: hidden;
+    transform: translateX(-50%); /*Doesn't move it back keeps in its place */
+    background-color: rgba(128, 128, 128, 0.4);
+    border-radius: 1.2rem;
+}
+
+/* Game Board  */
+
+.game_board{
+    display: grid;
+    grid-template-columns: repeat(3,10rem);
+    grid-template-rows: repeat(3,10rem);
+    /* border: 2px solid brown; */
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+.box{
+    font-family: "DynaPuff", system-ui;
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 2rem;
+}
+.box:hover{
+    background-color: rgba(255, 215, 0, 0.35);
+}
+/* RESET GAME /  NEW GAME BUTTONS  */
+.btn_container{
+
+
+    /* position: relative; 
+    z-index: 1; 
+    justify-content: center; 
+    margin-top: 20px;  */
+
+     display: inline-block;
+    margin-top: 2rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+    /*Doesn't move it back keeps in its place */
+    
+}
+
+.reset_btn{
+    font-family: "DynaPuff", system-ui;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem 2rem 2rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    margin-left: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.newgame_btn{
+    font-family: "DynaPuff", system-ui;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem 2rem 2rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    margin-right: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.reset_btn:hover {
+    background-color: rgba(255, 215, 0, 0.35);
+    cursor: pointer;
+    
+}
+.newgame_btn:hover {
+    background-color: rgba(255, 215, 0, 0.35);
+    cursor: pointer;
+    
+}
