@@ -134,6 +134,7 @@ const enable_btns = () => {
         box.disabled = false;
         box.style.pointerEvents = 'auto'; // Restores interaction
         box.innerText = ""; // Clear box content for a new game
+        count = 0;
     }
 };
 
